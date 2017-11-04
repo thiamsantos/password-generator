@@ -1,6 +1,6 @@
 module SecurePassword
-  PRINTABLE_CHARS = 32..126
-  WORDS = ["123456", "password", "qwerty"]
+  private PRINTABLE_CHARS = 32..126
+  private WORDS = ["123456", "password", "qwerty"]
 
   enum Strength
     WEAK
@@ -28,7 +28,7 @@ module SecurePassword
       end
     end
 
-    def random(size)
+    private def random(size)
       Array.new(size){rand(PRINTABLE_CHARS).chr}.join
     end
   end
