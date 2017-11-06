@@ -1,3 +1,5 @@
+require "./secure-password/*"
+
 module SecurePassword
   private PRINTABLE_CHARS = 32..126
   private WORDS           = ["123456", "password", "qwerty"]

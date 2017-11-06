@@ -1,0 +1,9 @@
+name: secure-password
+version: 0.1.0
+
+authors:
+  - Thiago Santos <thia.mdossantos@gmail.com>
+
+crystal: 0.23.1
+
+license: MIT
